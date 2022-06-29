@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+    </head>
+    <body>
+        <form action="https://formspree.io/f/xbjwewpa" method="POST">
+            <label for="fName">Full Name:</label>
+            <input
+                type="text"
+                name="fullName"
+                id="fName"
+                required
+                placeholder="Full Name"
+            />
+            <br />
+            <br />
+            <label for="Age">Age:</label>
+            <input
+                type="number"
+                name="Age"
+                id="Age"
+                required
+                min="0"
+                max="130"
+                placeholder="Age"
+            />
+            <br />
+            <br />
+            <label for="state">State:</label>
+            <select name="state" id="state">
+                <option default hidden value="">Please select state</option>
+                <option value="VIC">VIC</option>
+                <option value="NSW">NSW</option>
+                <option value="ACT">ACT</option>
+                <option value="QLD">QLD</option>
+                <option value="WA">WA</option>
+                <option value="SA">SA</option>
+                <option value="TAS">TAS</option>
+                <option value="NT">NT</option>
+            </select>
+            <br />
+            <br />
+            <label for="email">Email:</label>
+            <input
+                type="email"
+                name="email"
+                id="email"
+                required
+                placeholder="johnsmith@example.com"
+            />
+            <br />
+            <br />
+            <label for="phone">Phone Number:</label>
+            <input
+                type="tel"
+                name="phoneNumber"
+                id="phone"
+                pattern="[0]{1}[1-9]{1}[0-9]{8}"
+                placeholder="0402171205"
+            />
+            <br />
+            <br />
+            <label for="message">Message:</label>
+            <br />
+            <br />
+            <textarea
+                required
+                placeholder="Please leave a message here"
+                name="message"
+                id="message"
+                cols="30"
+                rows="3"
+            ></textarea>
+            <br />
+            <br />
+            <input type="submit" name="" id="" />
+        </form>
+    </body>
+</html>
